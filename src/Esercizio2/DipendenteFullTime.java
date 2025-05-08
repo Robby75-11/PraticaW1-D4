@@ -1,4 +1,4 @@
-package GestioneDipendenti;
+package Esercizio2;
 
 public class DipendenteFullTime extends Dipendente {
     private final double stipendioMensile;
@@ -6,9 +6,6 @@ public class DipendenteFullTime extends Dipendente {
     public DipendenteFullTime(String matricola, String dipartimento, double stipendioMensile) {
         super(matricola, dipartimento);
         this.stipendioMensile = stipendioMensile;
-    }
-    public double getStipendioMensile() {
-        return stipendioMensile;
     }
 
     @Override

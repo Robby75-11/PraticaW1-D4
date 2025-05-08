@@ -1,7 +1,6 @@
-package GestioneDipendenti;
+package Esercizio2;
 
 public class DipendentePartTime extends Dipendente {
-
     private final double pagaOraria;
     private final int oreLavorate;
 
@@ -15,6 +14,4 @@ public class DipendentePartTime extends Dipendente {
     public double calculateSalary() {
         return pagaOraria * oreLavorate;
     }
-
-
 }
