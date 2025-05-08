@@ -1,4 +1,5 @@
-package Esercizio2;
+package Esercizio1;
+
 public class Dirigente extends Dipendente {
     private final double stipendioBase;
     private final double bonus;
