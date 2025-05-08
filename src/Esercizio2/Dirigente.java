@@ -1,16 +1,17 @@
 package Esercizio2;
+public class Dirigente extends Dipendente {
+    private final double stipendioBase;
+    private final double bonus;
 
-public static void main(String[] args) {
-    Dipendente d1 = new DipendenteFullTime("FT001", "produzione", 2500.0);
-    Dipendente d2 = new DipendentePartTime("PT001", "vendite", 15.0, 80);
-    Dipendente d3 = new Dirigente("DIR001", "amministrazione", 3000.0, 1200.0);
+    public Dirigente(String matricola, String dipartimento, double stipendioBase, double bonus) {
+        super(matricola, dipartimento);
+        this.stipendioBase = stipendioBase;
+        this.bonus = bonus;
+    }
 
-    Dipendente[] dipendenti = { d1, d2, d3 };
-
-    for (Dipendente d : dipendenti) {
-        System.out.println("Matricola: " + d.getMatricola());
-        System.out.println("Dipartimento: " + d.getDipartimento());
-        System.out.println("Stipendio calcolato: " + d.calculateSalary());
-        System.out.println("------");
+    @Override
+    public double calculateSalary() {
+        return stipendioBase + bonus;
     }
 }
+
