@@ -1,4 +1,4 @@
-package Esercizio1;
+package GestioneDipendenti;
 
 public abstract class Dipendente {
     private final String matricola;
@@ -23,5 +23,10 @@ public abstract class Dipendente {
 
     // Metodo astratto da implementare nelle sottoclassi
     public abstract double calculateSalary();
+
+    @Override
+    public void checkIn() {
+        System.out.println("Dipendente con matricola " + matricola + " ha iniziato il turno.");
+    }
 }
 

@@ -1,4 +1,4 @@
-package Esercizio1;
+package GestioneDipendenti;
 
 public class DipendentePartTime extends Dipendente {
 

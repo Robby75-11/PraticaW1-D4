@@ -1,4 +1,4 @@
-package Esercizio1;
+package GestioneDipendenti;
 
 public class DipendenteFullTime extends Dipendente {
     private final double stipendioMensile;
